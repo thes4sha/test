@@ -91,7 +91,7 @@ def main(page: ft.Page):
                 if correct_input:
                     db.Table.write(db, "Partners", *args)
                     for field in fields:
-                        field.value=""
+                        field.value=" "
                     update_table()
                 else:
                     error_text.value = "Все поля должны быть заполнены!"
